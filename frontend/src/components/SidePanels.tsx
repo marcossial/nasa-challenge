@@ -107,13 +107,7 @@ export function IndicatorCard({ indicator, index = 0 }: { indicator: Indicator; 
     </article>
   );
 }
-export function InfoPanel({
-  onClose,
-  selectedIndicator,
-}: {
-  onClose: () => void;
-  selectedIndicator: string;
-}) {
+export function InfoPanel({ onClose }: { onClose: () => void }) {
   const { place } = usePlatform();
   const { summary, items } = useSummary();
   const displayed = labels.map(
@@ -155,15 +149,9 @@ export function InfoPanel({
         {summary.error && (
           <DataState error={summary.error.message} retry={() => summary.refetch()} />
         )}
-        {displayed
-          .filter((i) => selectedIndicator === "all" || i.id === selectedIndicator)
-          .map((i) => (
-            <IndicatorCard
-              key={i.id}
-              indicator={i}
-              index={labels.findIndex(([id]) => id === i.id)}
-            />
-          ))}
+        {displayed.map((indicator, index) => (
+          <IndicatorCard key={indicator.id} indicator={indicator} index={index} />
+        ))}
       </div>
       <footer className="space-y-2 border-t border-border p-3">
         <Button asChild className="w-full">
