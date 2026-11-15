@@ -23,3 +23,5 @@ A busca por município usa pontos internos derivados da [malha de municípios do
 O cliente HTTP em `src/services/api.ts` envia coordenadas WGS84 nos campos `latitude` e `longitude`. Os formatos FastAPI em `src/services/fastapi.ts` são convertidos para os dados que os componentes exibem. Campos nulos ou intervalos sem cobertura aparecem como indisponíveis. A chave do Gemini é configurada exclusivamente em `backend/.env`.
 
 Plantio e rotação enviam a data como `planting_day`, `planting_month` e `planting_year`. Na rotação, `previous_crop_name` leva o nome digitado da cultura anterior.
+
+The frontend sends `Accept-Language: en`. The FastAPI crop catalog, planting and rotation assessments, risk explanations, and AI responses use that preference. Deploy the updated FastAPI backend before deploying this frontend.

@@ -1,0 +1,65 @@
+{
+  "soybean": {
+    "name": "Soybean",
+    "purposes": ["Grain production"],
+    "climate_requirements": "Growth responds to air temperature, day length, and water availability. Germination depends on soil temperature.",
+    "water_requirements": "The reference gives 450 to 800 mm per cycle for maximum yield. Water needs vary with management, climate, and cycle length.",
+    "restrictions": ["Water availability is particularly important during establishment, flowering, and grain filling."],
+    "rotation_roles": ["Grain legume for diversified cropping systems"],
+    "reference_titles": ["Embrapa Soybean — Soybean production technologies"]
+  },
+  "corn": {
+    "name": "Corn",
+    "purposes": ["Grain production", "Forage and silage"],
+    "climate_requirements": "Temperature, water, and solar radiation influence development. Germination depends on soil temperature, and flowering responds to air temperature.",
+    "water_requirements": "Water availability is critical during tasseling, flowering, and grain filling.",
+    "restrictions": ["Check the cultivar group and planting system in the applicable ordinance."],
+    "rotation_roles": ["Grass crop for sequences with legumes", "Production of crop residue"],
+    "reference_titles": ["Embrapa Corn and Sorghum — How climate affects corn"]
+  },
+  "sorghum": {
+    "name": "Grain sorghum",
+    "purposes": ["Grain production"],
+    "climate_requirements": "A warm-season crop sensitive to low nighttime temperatures.",
+    "water_requirements": "Water is important during the seedling and flowering stages, even in crops tolerant of dry spells.",
+    "restrictions": ["For a second crop, limited water late in the growing cycle can constrain cultivation."],
+    "rotation_roles": ["Grass crop for diversification"],
+    "reference_titles": ["Embrapa Corn and Sorghum — Sorghum questions and answers"]
+  },
+  "oat": {
+    "name": "White oat",
+    "purposes": ["Grain", "Forage", "Ground cover"],
+    "climate_requirements": "A cool-season annual grass. Planting dates depend on the intended use and region.",
+    "restrictions": [
+      "Confirm the species and intended use before applying an official planting window.",
+      "The ZARC oat category covers more than one species. Check the cultivar in the ordinance."
+    ],
+    "rotation_roles": ["Winter ground cover", "Diversification with a grass crop"],
+    "reference_titles": [
+      "Embrapa Temperate Agriculture — Forage crops",
+      "Embrapa — Green manure and cover crops in Brazil",
+      "MAPA — Current ZARC ordinances for São Paulo"
+    ]
+  },
+  "sunn_hemp": {
+    "name": "Sunn hemp",
+    "purposes": ["Green manure", "Ground cover"],
+    "climate_requirements": "A warm-season species grown for cover and green manure. Establishment depends on the planting date and local conditions.",
+    "restrictions": ["The references apply to Crotalaria juncea."],
+    "rotation_roles": ["Biomass production", "Biological nitrogen fixation"],
+    "reference_titles": ["Embrapa — Green manure and cover crops in Brazil"]
+  },
+  "sugarcane": {
+    "name": "Sugarcane",
+    "purposes": ["Sugar and ethanol production", "Other uses as specified by the planting category"],
+    "climate_requirements": "Heat and solar radiation promote growth when water is available. Cooler temperatures and lower water availability can favor ripening.",
+    "water_requirements": "Water availability is especially important during establishment and vegetative growth. Demand depends on growth stage, soil, and local growing conditions.",
+    "restrictions": ["The ordinances consulted cover rainfed cultivation. Check the intended use, soil available water class, and 10-day planting period for the municipality in ZARC."],
+    "rotation_roles": ["Stalk production with the potential for regrowth after harvest"],
+    "reference_titles": [
+      "Embrapa — Characteristics of sugarcane",
+      "Embrapa — Planting sugarcane",
+      "MAPA — Current ZARC ordinances for São Paulo"
+    ]
+  }
+}
